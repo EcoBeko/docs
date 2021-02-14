@@ -1,0 +1,6 @@
+# line endings
+* text=auto
+
+# images as binaries
+*.png binary
+*.jpg binary
