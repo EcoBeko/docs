@@ -1,22 +1,24 @@
 {
   "name": "eco-beko.docs",
-  "private": true,
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benzo-gs1/portal.sdu.docs.git"
+    "url": "git+https://github.com/EcoBeko/docs.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "EcoBeko",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benzo-gs1/portal.sdu.docs/issues"
+    "url": "https://github.com/EcoBeko/docs/issues"
   },
-  "homepage": "https://github.com/benzo-gs1/portal.sdu.docs#readme",
+  "scripts": {
+    "start": "npx docsify serve ./docs"
+  },
+  "homepage": "https://github.com/EcoBeko/docs#readme",
   "devDependencies": {
     "husky": "^4.2.5",
-    "prettier": "^2.0.4",
-    "pretty-quick": "^2.0.1"
+    "docsify-cli": "^4.4.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "~2.0.1"
   },
   "husky": {
     "hooks": {
