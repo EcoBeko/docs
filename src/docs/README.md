@@ -27,7 +27,7 @@ This app _could potentially help_ the beginners that want to start help the plan
 
 What we want to achieve is a fully functional, standalone web application and database that could scale and handle things nicely.
 
-We have tried to build EcoBeko before (old repositories are now archived, and old docs are available [here](docs.old/index.md)), however we were able to have only authorization/registration with News feed, user trash recycling statistics and map containing recycling points in Almaty. Being more experienced with building stuff, we are able now to finish much more modules here.
+We have tried to build EcoBeko before (old repositories are now archived), however we were able to have only authorization/registration with News feed, user trash recycling statistics and map containing recycling points in Almaty. Being more experienced with building stuff, we are able now to finish much more modules here.
 
 General features/modules the system covers:
 
