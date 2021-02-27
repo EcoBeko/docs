@@ -2,7 +2,7 @@
 
 This document covers SDU's CSS348 Advanced Database Management course project. We, as a team are asked to build a system containing relatively complex database layer.
 
-While building, the whole application will be available at cloud: [https://eco-beko.ryspekov.life](https://eco-beko.ryspekov.life)
+While building, the whole application will be available at cloud: [https://eco-beko.ryspekov.life](https://eco-beko.ryspekov.life). Documentation is available here: [https://eco-beko.ryspekov.life/docs](https://eco-beko.ryspekov.life/docs)
 
 Table of contents:
 
