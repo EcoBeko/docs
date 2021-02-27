@@ -11,7 +11,7 @@
     "url": "https://github.com/EcoBeko/docs/issues"
   },
   "scripts": {
-    "start": "npx docsify serve ./docs"
+    "dev": "npx docsify serve ./docs"
   },
   "homepage": "https://github.com/EcoBeko/docs#readme",
   "devDependencies": {
