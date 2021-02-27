@@ -1,4 +1,4 @@
-- **[Main](README.md)**
+- **[Main](index.md)**
 - **Features Description**
   <!-- - [Краткое Описание](functions/index.md) -->
   <!-- - [Пользователь](functions/client.md) -->
