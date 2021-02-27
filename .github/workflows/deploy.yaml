@@ -19,5 +19,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /root/docs
-            git pull origin master
+            git pull origin main
             yarn install --frozen-lockfile
