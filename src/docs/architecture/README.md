@@ -2,7 +2,7 @@
 
 From top-level the whole system looks like this:
 
-![architecture](img/architecture.png)
+![architecture](../img/architecture.png)
 
 - API consumer (or Client) is accessing the Reverse-Proxy Nginx server for resources like: static files, API
 - Nginx server serves static files and proxies the requests into internal REST API server
