@@ -2,7 +2,7 @@
 
 This document covers SDU's CSS348 Advanced Database Management course project. We, as a team are asked to build a system containing relatively complex database layer.
 
-While building, the whole application will be available at cloud: [https://eco-beko.ryspekov.life](https://eco-beko.ryspekov.life). Documentation is available here: [https://eco-beko.ryspekov.life/docs](https://eco-beko.ryspekov.life/docs)
+While building, the whole application will be available at cloud: [https://eco-beko.ryspekov.life/app](https://eco-beko.ryspekov.life/app). Documentation is available here: [https://eco-beko.ryspekov.life/docs](https://eco-beko.ryspekov.life/docs)
 
 Table of contents:
 
@@ -13,7 +13,7 @@ Table of contents:
     - [Frontend](#frontend)
     - [Backend](#backend)
     - [Database](#database)
-  - [REST API reference](#rest-api-reference)
+  - [REST API reference 👷](#rest-api-reference-)
 
 ## Project Description 📓
 
@@ -44,7 +44,7 @@ General features/modules the system covers:
 
 ## Tech Stack & Tools ⚙️
 
-The architecture is available [here](architecture/index.md)
+The architecture is available [here](architecture/README.md)
 
 We will be building a simple client-server architecture, but there are some details.
 
@@ -60,6 +60,6 @@ REST API is the common way to go, in terms of building apps as SPA's. Having sin
 
 [Postgres SQL](https://www.postgresql.org/) is one of the most popular SQL database. It's Open Source nature brings a community, that any project definitely wants. Postgres is known to be a highly fault-tolerant and while comparing to the other SQL solutions, it's easy to setup and get start with.
 
-## REST API reference
+## REST API reference 👷
 
 API docs will be build with [Swagger](https://swagger.io/) and will be available at [/apidoc](https://eco-beko.ryspekov.life/apidoc) endpoint
