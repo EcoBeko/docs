@@ -1,3 +1,4 @@
 - **[Main](docs/)**
 - **[Architecture](docs/architecture/)**
 - **[Functionalities](docs/functionalities/)**
+- **[Database](docs/database/)**
