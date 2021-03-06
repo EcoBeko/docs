@@ -13,7 +13,7 @@ The only exception is the map module and eco projects. We are adding recycling p
 
 The data properties we collect will affect the ER diagram in the future.
 
-The basic schema will look like this:
+The basic schema will look like this (copied from old project):
 
 ![basic-schema](../img/basic-schema.png)
 
