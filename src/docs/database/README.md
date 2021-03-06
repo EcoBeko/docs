@@ -21,7 +21,7 @@ Here, recycling points could accept multiple waste types, opposite is true, mult
 
 The datasets:
 
-- [Recycling points (Almaty)](../datasets/recycling-points-almaty.csv)
-- [Waste types](../datasets/waste-types.csv)
+- [Recycling points (Almaty)](../datasets/recycling-points-almaty.csv ":ignore :target=_blank")
+- [Waste types](../datasets/waste-types.csv ":ignore :target=_blank")
 
 ## Database Schema
