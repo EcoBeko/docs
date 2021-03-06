@@ -8,7 +8,7 @@ This document covers functionalities we provide to the different users. This is 
 
 The answer: by giving the users the ability to register and then authenticate themselves in our system:
 
-<!-- TODO: use-case -->
+![authorization-registration](../img/use-case/authorization-registration.png)
 
 ## News module
 
@@ -16,13 +16,13 @@ The answer: by giving the users the ability to register and then authenticate th
 
 The answer: users will be able to write regular posts in our system and share them with their friends.
 
-<!-- TODO: use case -->
+![write-posts](../img/use-case/write-posts.png)
 
-2. Learning through experiences is a good way to go, however, sometimes writing just posts is not good enough as the idea of posts is similar to Twitter's tweets, little, short stories. How professionals of different degree could share stories/materials in more structured way?
+1. Learning through experiences is a good way to go, however, sometimes writing just posts is not good enough as the idea of posts is similar to Twitter's tweets, little, short stories. How professionals of different degree could share stories/materials in more structured way?
 
 The answer: users will be able to write articles in medium manner.
 
-<!-- TODO use case -->
+![write-articles](../img/use-case/write-articles.png)
 
 ## Friends module
 
@@ -30,13 +30,13 @@ The answer: users will be able to write articles in medium manner.
 
 The answer: users will be able to search for friends using multiple filter parameters.
 
-<!-- TODO use case -->
+![searching-friends](../img/use-case/searching-friends.png)
 
-2. Searching for all the closest friends you got could turn out to be pretty complicated task, how users could find friends more easily?
+1. Searching for all the closest friends you got could turn out to be pretty complicated task, how users could find friends more easily?
 
 The answer: recommendation system based on users friends could help find their other friends too.
 
-<!-- TODO use case -->
+![recommendation-list](../img/use-case/recommendation-list.png)
 
 ## Statistics module
 
@@ -44,7 +44,7 @@ The answer: recommendation system based on users friends could help find their o
 
 The answer: visuals and strong numbers could trick our brain to understand the reason behind his actions. The system will provide a proper statistics in terms of amount of saved trees and energy also keeping track of how much KG is collected by individual user or globally.
 
-<!-- TODO use case -->
+![update-statistics](../img/use-case/update-statistics.png)
 
 ## Messages module
 
@@ -52,13 +52,13 @@ The answer: visuals and strong numbers could trick our brain to understand the r
 
 The answer: messages module will provide a real-time way of connecting with any friend.
 
-<!-- TODO use case -->
+![write-messages](../img/use-case/write-messages.png)
 
-2. What if users will want to discuss something quick with 3 or more people instead of writing to each person?
+1. What if users will want to discuss something quick with 3 or more people instead of writing to each person?
 
 The answer: group chats.
 
-<!-- TODO use case -->
+!> Use-case for group chats are the same, but scales with multiple users
 
 ## Communities module
 
@@ -66,19 +66,19 @@ The answer: group chats.
 
 The answer: subscribing to communities.
 
-<!-- TODO use case -->
+![subscribe-to-community](../img/use-case/subscribe-to-community.png)
 
-2. Having communities is great, but if single user is unable to find a community of his own thoughts and ideas, what should he do?
+1. Having communities is great, but if single user is unable to find a community of his own thoughts and ideas, what should he do?
 
 The answer: create and administrate his own community.
 
-<!-- TODO use case -->
+![add-community](../img/use-case/add-community.png)
 
-3. As communities are growing in size, it becomes difficult to administrate them singlehandedly, how the users are supposed to scale the community?
+1. As communities are growing in size, it becomes difficult to administrate them singlehandedly, how the users are supposed to scale the community?
 
 The answer: users could ask friends to become the moderator of their group, so they can perform different tasks such as editing/creating in their communities.
 
-<!-- TODO use case -->
+![add-community-moderator](../img/use-case/add-community-moderator.png)
 
 ## Map module
 
@@ -86,13 +86,13 @@ The answer: users could ask friends to become the moderator of their group, so t
 
 The answer: users could use the eco map the system provides and search for a proper place in their city.
 
-<!-- TODO use case -->
+![view-map](../img/use-case/view-map.png)
 
-2. There could be a bug number of recycling points across the city, how to find the proper one? (to be sure that a place can accept a certain material)
+1. There could be a bug number of recycling points across the city, how to find the proper one? (to be sure that a place can accept a certain material)
 
 The answer: the eco map provides a way to filter places according to materials they want.
 
-<!-- TODO use case -->
+![view-map-filtered](../img/use-case/view-map-filtered.png)
 
 ## Eco Projects module
 
@@ -100,7 +100,7 @@ The answer: the eco map provides a way to filter places according to materials t
 
 The answer: special users are able to keep track of such events and publish them in events feed.
 
-<!-- TODO use case -->
+![view-eco-projects](../img/use-case/view-eco-projects.png)
 
 ## Administration module
 
@@ -108,4 +108,4 @@ The answer: special users are able to keep track of such events and publish them
 
 The answer: another special user type with admin role (which is created by hand) is able to access admin console and perform such a task.
 
-<!-- TODO use case -->
+![administrate-moderators](../img/use-case/administrate-moderators.png)
