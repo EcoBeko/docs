@@ -24,4 +24,8 @@ The datasets:
 - [Recycling points (Almaty)](../datasets/recycling-points-almaty.csv ":ignore :target=_blank")
 - [Waste types](../datasets/waste-types.csv ":ignore :target=_blank")
 
+After the schema will be done (After Phase 4), we will generate our users and populate tables.
+
 ## Database Schema
+
+![schema](../img/schema.png)
