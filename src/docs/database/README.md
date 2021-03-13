@@ -29,3 +29,7 @@ After the schema will be done (After Phase 4), we will generate our users and po
 ## Database Schema
 
 ![schema](../img/schema.png)
+
+## Phase 5 SQL queries
+
+Phase 5 queries are available at database repository of **Eco Beko**, here's [the link to the repo](https://github.com/EcoBeko/database).
