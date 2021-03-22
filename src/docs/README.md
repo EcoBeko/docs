@@ -4,17 +4,6 @@ This document covers SDU's CSS348 Advanced Database Management course project. W
 
 While building, the whole application will be available at cloud: [https://eco-beko.ryspekov.life/app](https://eco-beko.ryspekov.life/app). Documentation is available here: [https://eco-beko.ryspekov.life/docs](https://eco-beko.ryspekov.life/docs)
 
-Table of contents:
-
-- [EcoBeko's Documentation 💬](#ecobekos-documentation-)
-  - [Project Description 📓](#project-description-)
-  - [Scope 🧐](#scope-)
-  - [Tech Stack & Tools ⚙️](#tech-stack--tools-️)
-    - [Frontend](#frontend)
-    - [Backend](#backend)
-    - [Database](#database)
-  - [REST API reference 👷](#rest-api-reference-)
-
 ## Project Description 📓
 
 **EcoBeko** is a eco-activists oriented social network, where in addition to an ordinary online social interactions features, new ones are added!
