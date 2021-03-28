@@ -90,7 +90,7 @@ REST API is the common way to go, in terms of building apps as SPA's. Having sin
 
 ### REST API reference 👷
 
-API docs will be build with [Swagger](https://swagger.io/) and will be available at [/apidoc](https://eco-beko.ryspekov.life/apidoc) endpoint
+API docs will be build with [Swagger](https://swagger.io/) and will be available at [/api](https://eco-beko.ryspekov.life/api) endpoint
 
 ## Phase 3
 
