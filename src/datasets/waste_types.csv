@@ -1,20 +1,20 @@
-title,icon
-Aluminum cans,alumin.svg
-Wastepaper,wastepaper.svg
-Cardboard,cardboard.svg
-Glassware,glassware.svg
-Metal,metal.svg
-Plastic,plastic.svg
-Polyethylene,polyethylene.svg
-Textile,textile.svg
-Tetra Pak,tetra-pak.svg
-Batteries,batteries.svg
-Styrofoam,styrofoam.svg
-Computer equipment,computer-equipment.svg
-Appliances,appliances.svg
-Tyre,tyre.svg
-Lamps,lamps.svg
-"Wires, cables",wires-cables.svg
-Office equipment,office-equipment.svg
-Mercury,mercury.svg
-Medical waste,medical-waste.svg
+id,title,icon
+8fcc1843-e287-4168-8a98-a396b1baae8e,Aluminum cans,alumin.svg
+da252931-1f14-4fd5-a54b-857b8f760555,Wastepaper,wastepaper.svg
+ece03d82-889b-4f66-8a22-9cbf3f5e31fa,Cardboard,cardboard.svg
+f3a4b6e0-2d95-427c-8a4d-d3fd1fd4c580,Glassware,glassware.svg
+57911806-f729-44ae-b170-6953bd7d1802,Metal,metal.svg
+af4415b8-36d2-4c26-8ee9-8f2112262862,Plastic,plastic.svg
+56048df0-d1b5-463c-b964-b4d4d50b2816,Polyethylene,polyethylene.svg
+a376579e-ac37-4c45-b9ce-f8ac15736042,Textile,textile.svg
+1b10729d-644e-46bf-999e-209cbf28e6b3,Tetra Pak,tetra-pak.svg
+936a7317-4183-498c-9de8-ad61189184ec,Batteries,batteries.svg
+e26a411d-40c3-4ede-88b3-f463e53aab43,Styrofoam,styrofoam.svg
+5af391df-7ee2-4f0f-b615-544711b58226,Computer equipment,computer-equipment.svg
+28a20b56-789a-4458-a6c7-a7dd1e80fa50,Appliances,appliances.svg
+790062ba-0a03-4ec5-90a9-ff6c8d15cf81,Tyre,tyre.svg
+8111c1e8-7d82-4e6d-ac07-de900ef27d15,Lamps,lamps.svg
+9c96da92-8d51-46cc-b79e-a0acf6b38172,"Wires, cables",wires-cables.svg
+31da7cb9-598f-4da5-aaf1-4cc201dbda10,Office equipment,office-equipment.svg
+6bc6401e-94ae-4668-ad16-ba4b0c898da8,Mercury,mercury.svg
+a1a73197-feb1-48c4-a669-3b2e30c1bd44,Medical waste,medical-waste.svg
