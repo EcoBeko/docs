@@ -39,6 +39,7 @@ Table of contents:
       - [Statistics (stats_records, stats_types, stats_type_maps, waste_types tables)](#statistics-stats_records-stats_types-stats_type_maps-waste_types-tables)
       - [Communities (communities, subscriptions tables)](#communities-communities-subscriptions-tables)
       - [Posts (posts, comments tables)](#posts-posts-comments-tables)
+  - [Phase 5](#phase-5)
 
 ## Phase 2
 
@@ -210,8 +211,10 @@ Datasets were generated after Phase 4 and are available here:
 - [recycling_points.csv](src/datasets/recycling_points.csv)
 - [waste_types.csv](src/datasets/waste_types.csv)
 - [communities.csv](src/datasets/communities.csv)
+- [recycling_points.csv](src/datasets/recycling_points.csv)
+- [recycling_point_accepts.csv](src/datasets/recycling_point_accepts.csv)
 
-> We will generate much more datasets later
+> We will generate more datasets later
 
 ## Phase 4
 
@@ -263,3 +266,20 @@ It's simple, users are able to create a community, and other users can subscribe
 #### Posts (posts, comments tables)
 
 Users are able to write posts or articles, which are stored in a json format. Author could be a user or community which could be evaluated in a procedure.
+
+## Phase 5
+
+Queries are available here:
+
+- [1](phase-5/1.sql)
+- [2-3](phase-5/2-3.sql)
+- [4](phase-5/4.sql)
+- [5](phase-5/5.sql)
+- [6](phase-5/6.sql)
+- [7-8](phase-5/7-8.sql)
+- [9](phase-5/9.sql)
+- [10](phase-5/10.sql)
+- [11](phase-5/11.sql)
+- [12-13](phase-5/12-13.sql)
+- [14](phase-5/14.sql)
+- [15](phase-5/15.sql)
