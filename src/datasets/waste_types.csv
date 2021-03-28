@@ -1,22 +1,20 @@
 title,icon
 Aluminum cans,alumin.svg
-Wastepaper,surface1.svg
-Cardboard,package.svg
-Glassware,glass.svg
-Metal,anvil.svg
-Plastic,beverage.svg
-Polyethylene,page-1.svg
-Textile,casual-t-shirt.svg
-Tetra Pak,milk-box.svg
-Batteries,battery.svg
-Styrofoam,box.svg
-Computer equipment,digital.svg
-Appliances,washing-machine.svg
-Tyre,tire.svg
+Wastepaper,wastepaper.svg
+Cardboard,cardboard.svg
+Glassware,glassware.svg
+Metal,metal.svg
+Plastic,plastic.svg
+Polyethylene,polyethylene.svg
+Textile,textile.svg
+Tetra Pak,tetra-pak.svg
+Batteries,batteries.svg
+Styrofoam,styrofoam.svg
+Computer equipment,computer-equipment.svg
+Appliances,appliances.svg
+Tyre,tyre.svg
 Lamps,lamps.svg
-"Wires, cables",wire.svg
-Office equipment,office.svg
+"Wires, cables",wires-cables.svg
+Office equipment,office-equipment.svg
 Mercury,mercury.svg
-Medical waste,medical.svg
-Computer equipment,digital.svg
-batteries,battery.svg
+Medical waste,medical-waste.svg
