@@ -217,6 +217,9 @@ Datasets were generated after Phase 4 and are available here:
 
 ### Schema
 
+- [DDL queries](Ecobekter-DDL-queries.sql)
+- [DML queries](Ecobekter-DML-data-load.sql)
+
 ![schema](src/img/schema.png)
 
 ### Description
