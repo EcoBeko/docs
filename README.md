@@ -40,6 +40,7 @@ Table of contents:
       - [Communities (communities, subscriptions tables)](#communities-communities-subscriptions-tables)
       - [Posts (posts, comments tables)](#posts-posts-comments-tables)
   - [Phase 5](#phase-5)
+  - [Phase 6](#phase-6)
 
 ## Phase 2
 
@@ -283,3 +284,9 @@ Queries are available here:
 - [12-13](phase-5/12-13.sql)
 - [14](phase-5/14.sql)
 - [15](phase-5/15.sql)
+
+## Phase 6
+
+Application link: [https://eco-beko.ryspekov.life/app](https://eco-beko.ryspekov.life/app)
+Rest API reference: [https://eco-beko.ryspekov.life/api](https://eco-beko.ryspekov.life/api)
+PG Admin console: [http://eco-beko.ryspekov.life:5480/browser/](http://eco-beko.ryspekov.life:5480/browser/)
