@@ -42,6 +42,7 @@ Table of contents:
   - [Phase 5](#phase-5)
   - [Phase 6](#phase-6)
   - [Complex queries for future phases](#complex-queries-for-future-phases)
+  - [Phase 7](#phase-7)
 
 ## Phase 2
 
@@ -299,7 +300,17 @@ They are wrapped inside functions for parameter usage, calculations will be done
 1. [f_get_community](complex-queries/f_get_community.sql)
 2. [f_get_users_stats](complex-queries/f_get_user_stats.sql)
 3. [f_get_subs](complex-queries/f_get_subs.sql)
-4. [f_get_user_feed](complex-queries/f_get_subs.sql)
+4. [f_get_user_feed](complex-queries/f_get_user_feed.sql)
 5. [f_get_top_community_users](complex-queries/f_get_top_community_users.sql)
 6. [f_get_top_waste_types](complex-queries/f_get_top_waste_types.sql)
 7. [f_get_top_impactful_users](complex-queries/f_get_top_impactful_users.sql)
+
+## Phase 7
+
+- [1 query](phase-7/1.png)
+- [2 query](phase-7/2.png)
+- [3 query](phase-7/3.png)
+- [4 query](phase-7/4.png)
+- [5 query](phase-7/5.png)
+- [6 query](phase-7/6.png)
+- [7 query](phase-7/7.png)
