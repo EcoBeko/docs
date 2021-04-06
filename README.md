@@ -41,6 +41,7 @@ Table of contents:
       - [Posts (posts, comments tables)](#posts-posts-comments-tables)
   - [Phase 5](#phase-5)
   - [Phase 6](#phase-6)
+  - [Complex queries for future phases](#complex-queries-for-future-phases)
 
 ## Phase 2
 
@@ -290,3 +291,15 @@ Queries are available here:
 Application link: [https://eco-beko.ryspekov.life/app](https://eco-beko.ryspekov.life/app)
 Rest API reference: [https://eco-beko.ryspekov.life/api](https://eco-beko.ryspekov.life/api)
 PG Admin console: [http://eco-beko.ryspekov.life:5480/browser/](http://eco-beko.ryspekov.life:5480/browser/)
+
+## Complex queries for future phases
+
+They are wrapped inside functions for parameter usage, calculations will be done using queries themselves
+
+1. [f_get_community](complex-queries/f_get_community.sql)
+2. [f_get_users_stats](complex-queries/f_get_user_stats.sql)
+3. [f_get_subs](complex-queries/f_get_subs.sql)
+4. [f_get_user_feed](complex-queries/f_get_subs.sql)
+5. [f_get_top_community_users](complex-queries/f_get_top_community_users.sql)
+6. [f_get_top_waste_types](complex-queries/f_get_top_waste_types.sql)
+7. [f_get_top_impactful_users](complex-queries/f_get_top_impactful_users.sql)
