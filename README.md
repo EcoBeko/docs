@@ -43,6 +43,7 @@ Table of contents:
   - [Phase 6](#phase-6)
   - [Complex queries for future phases](#complex-queries-for-future-phases)
   - [Phase 7](#phase-7)
+  - [Phase 8](#phase-8)
   - [Phase 10](#phase-10)
 
 ## Phase 2
@@ -315,6 +316,16 @@ They are wrapped inside functions for parameter usage, calculations will be done
 - [5 query](phase-7/5.png)
 - [6 query](phase-7/6.png)
 - [7 query](phase-7/7.png)
+
+## Phase 8
+
+- [1-cardinality](phase-8/1-cardinality.txt)
+- [2-cardinality](phase-8/2-cardinality.txt)
+- [3-cardinality](phase-8/3-cardinality.txt)
+- [4-cardinality](phase-8/4-cardinality.txt)
+- [5-cardinality](phase-8/5-cardinality.txt)
+- [6-cardinality](phase-8/6-cardinality.txt)
+- [7-cardinality](phase-8/7-cardinality.txt)
 
 ## Phase 10
 
