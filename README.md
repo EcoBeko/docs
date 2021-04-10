@@ -43,6 +43,7 @@ Table of contents:
   - [Phase 6](#phase-6)
   - [Complex queries for future phases](#complex-queries-for-future-phases)
   - [Phase 7](#phase-7)
+  - [Phase 10](#phase-10)
 
 ## Phase 2
 
@@ -314,3 +315,7 @@ They are wrapped inside functions for parameter usage, calculations will be done
 - [5 query](phase-7/5.png)
 - [6 query](phase-7/6.png)
 - [7 query](phase-7/7.png)
+
+## Phase 10
+
+Our final report is available [here](ProjectFinalReport.md)
