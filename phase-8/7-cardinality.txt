@@ -1,0 +1,50 @@
+select
+  count(*)
+from stats_types st 
+  join stats_types_maps stm on (stm.stats_type_id = st.id)
+  join waste_types wt on (wt.id = stm.waste_type_id)
+  join stats_records sr on (sr.waste_type_id = wt.id)
+  join users u on (u.id = sr.user_id)
+where sr."date" between '2000-01-01' and '2023-01-01';
+
+/* 
+ * First join selection
+ * (((stats_types join stats_types_maps) join waste_types) join stats_records) join users
+ * Join Cardinalities: 21 + 21 + 64839 + 64839 = 129720
+ * Join Estimation: ((3*21) / 3) * (13 / 13) * (40093 / (13*9)) * (10003 / 10003) = 7196
+ */
+select
+  count(*)
+from stats_types st 
+  join stats_types_maps stm on (stm.stats_type_id = st.id)
+  join waste_types wt on (wt.id = stm.waste_type_id)
+  join stats_records sr on (sr.waste_type_id = wt.id and sr."date" between '2000-01-01' and '2023-01-01')
+  join users u on (u.id = sr.user_id);
+
+/* 
+ * Second join selection
+ * (((stats_types join stats_types_maps) join users) join waste_types) join stats_records
+ * Join Cardinalities: 21 + 210063 + 210063 + 64839 = 484986
+ * Join Estimation: ((3*21) / 3) * (10003) * (13/ 13) * (40093 / (13*9*10003)) = 7196
+ */
+select
+  count(*)
+from stats_types st 
+  join stats_types_maps stm on (stm.stats_type_id = st.id)
+  cross join users u
+  join waste_types wt on (wt.id = stm.waste_type_id)
+  join stats_records sr on (sr.waste_type_id = wt.id and sr."date" between '2000-01-01' and '2023-01-01' and u.id = sr.user_id)
+
+/* 
+ * Third join selection
+ * (((stats_records join stats_types) join stats_types_maps) join users) join waste_types
+ * Join Cardinalities: 120279 + 841953 + 8,422056*10^9 + 64839 = 8,422983*10^9 
+ * Join Estimation: ((40093*3) / 9) * (21 / 3) * (10003) * (13 / (10003*13*13)) = 7196
+ */
+select
+  count(*)
+from stats_records sr 
+  join stats_types st on (sr."date" between '2000-01-01' and '2023-01-01')
+  join stats_types_maps stm on (stm.stats_type_id = st.id)
+  cross join users u
+  join waste_types wt on (u.id = sr.user_id and sr.waste_type_id = wt.id and wt.id = stm.waste_type_id);

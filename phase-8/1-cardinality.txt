@@ -1,0 +1,88 @@
+select 
+  count(*)
+from communities c
+  left join resources r on (r.id = c.main_image and r."type" = 'image')
+  join subscriptions s on (s.community_id = c.id)
+  left join subscriptions s2 on 
+  (
+    s2.community_id = c.id and 
+    s2.user_id = _user_id and
+    s2.status = 'moderator'
+  )
+  left join subscriptions s3 on
+  (
+    s3.community_id  = c.id and
+    s3.user_id = _user_id
+  )
+where c.id = _id;
+
+/* 
+ * First join selection
+ * (((communities join resources) join subscriptions s) join subscriptions s2) join subscriptions s3
+ * Join Cardinalities: 5001 + 3313 + 3313 + 3313 = 14940
+ * Join Estimation: ((5001*114) / (114*36)) * (1007147 / (5001*5001)) * (1007147 / (5001*10002*3)) * (1007147 / (5001*10002)) = 1
+ */
+select 
+  count(*)
+from communities c
+  left join resources r on (r.id = c.main_image and r."type" = 'image')
+  join subscriptions s on (s.community_id = c.id and c.id = 'c8bcd0d0-6ffd-46ed-91b5-dbcde0d7cd19')
+  left join subscriptions s2 on 
+  (
+    s2.community_id = c.id and 
+    s2.user_id = '80a9cacf-8ce7-4cf6-b6b2-1e8b4a28a265' and
+    s2.status = 'moderator'
+  )
+  left join subscriptions s3 on
+  (
+    s3.community_id  = c.id and
+    s3.user_id = '80a9cacf-8ce7-4cf6-b6b2-1e8b4a28a265'
+  );
+
+
+
+/* 
+ * Second join selection
+ * (((subscriptions join communities) join s2) join s3) join resources
+ * Join Cardinalities: 3313 + 3313 + 3313 + 3313 = 13252
+ * Join Estimation: ((1007147*5001) / (5001*5001)) * (1007147 / (5001*10002*3)) * (1007147 / (5001*10002)) * (114 / (114*36)) = 1
+ */
+select 
+  count(*)
+from subscriptions s
+  join communities c on (s.community_id = c.id and c.id = 'c8bcd0d0-6ffd-46ed-91b5-dbcde0d7cd19')
+  left join subscriptions s2 on 
+  (
+    s2.community_id = c.id and 
+    s2.user_id = '80a9cacf-8ce7-4cf6-b6b2-1e8b4a28a265' and
+    s2.status = 'moderator'
+  )
+  left join subscriptions s3 on
+  (
+    s3.community_id  = c.id and
+    s3.user_id = '80a9cacf-8ce7-4cf6-b6b2-1e8b4a28a265'
+  )
+  left join resources r on (r.id = c.main_image and r."type" = 'image');
+
+/* 
+ * Third join selection
+ * (((subscriptions join communities) join s2) join s3) join resources
+ * Join Cardinalities: 3313 + 3313 + 3313 + 3313 = 13252
+ * Join Estimation: ((5001*1007147) / (5001*5001)) * (1007147 / (5001*10002*3)) * (1007147 / (5001*10002)) * (114 / (114*36)) = 1
+ */
+select 
+  count(*)
+from communities c
+  join subscriptions s on (s.community_id = c.id and c.id = 'c8bcd0d0-6ffd-46ed-91b5-dbcde0d7cd19')
+  left join subscriptions s2 on 
+  (
+    s2.community_id = c.id and 
+    s2.user_id = '80a9cacf-8ce7-4cf6-b6b2-1e8b4a28a265' and
+    s2.status = 'moderator'
+  )
+  left join subscriptions s3 on
+  (
+    s3.community_id  = c.id and
+    s3.user_id = '80a9cacf-8ce7-4cf6-b6b2-1e8b4a28a265'
+  )
+  left join resources r on (r.id = c.main_image and r."type" = 'image');
