@@ -1,0 +1,41 @@
+select
+  count(*)
+from waste_types wt
+  join stats_records sr on (sr.waste_type_id = wt.id)
+  join users u on (sr.user_id = u.id);
+
+/* 
+ * First join selection
+ * (waste_types join stats_records) join users
+ * Join Cardinalities: 40093 + 40093 = 80186
+ * Join Estimation: (521209 / 13) * (10003 / 10003) = 40093
+ */
+select
+  count(*)
+from waste_types wt
+  join stats_records sr on (sr.waste_type_id = wt.id)
+  join users u on (sr.user_id = u.id);
+
+/* 
+ * Second join selection
+ * (users join stats_records) join waste_types
+ * Join Cardinalities: 40093 + 40093 = 80186
+ * Join Estimation: (401050279 / 10003) * (13 / 13) = 40093
+ */
+select
+  count(*)
+from users u
+  join stats_records sr on (sr.user_id = u.id)
+  join waste_types wt on (wt.id = sr.waste_type_id);
+
+/* 
+ * Third join selection
+ * (stats_records join waste_types) join users
+ * Join Cardinalities: 40093 + 40093 = 80186
+ * Join Estimation: (521209 / 13) * (10003 / 10003) = 40093
+ */
+select
+  count(*)
+from stats_records sr
+  join waste_types wt on (wt.id = sr.waste_type_id)
+  join users u on (sr.user_id = u.id);
