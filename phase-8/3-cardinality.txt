@@ -1,0 +1,45 @@
+select
+  count(*)
+from communities c 
+  join subscriptions s on (c.id = s.community_id)
+  join users u on (s.user_id = u.id and u.id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7')
+  left join resources r on (r.id = u.avatar and r."type" = 'image');
+
+/* 
+ * First join selection
+ * ((communities join subscriptions) join users) join resources
+ * Join Cardinalities: 1007147 + 158 + 158 = 1007463
+ * Join Estimation: (5036742147 / 5001) * (10003 / (10003 * 10003)) * (114 / (114 * 36) = 3
+ */
+select
+  count(*)
+from communities c 
+  join subscriptions s on (c.id = s.community_id)
+  join users u on (s.user_id = u.id and u.id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7')
+  left join resources r on (r.id = u.avatar and r."type" = 'image');
+
+/* 
+ * Second join selection
+ * ((subscriptions join users) join communities) join resources
+ * Join Cardinalities: 158 + 158 + 158 = 474
+ * Join Estimation: (10075498588 / (10003 * 10003)) * (5001 / 5001) * (114 / (114 * 36)) = 3
+ */
+select
+  count(*)
+from subscriptions s 
+  join users u on (s.user_id = u.id and u.id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7')
+  join communities c on (c.id = s.community_id)
+  left join resources r on (r.id = u.avatar and r."type" = 'image');
+
+/* 
+ * Third join selection
+ * ((users join communities) join subscriptions) join resources
+ * Join Cardinalities: 50030004 + 158 + 158 = 50030320
+ * Join Estimation: (50030004) * (1007147 / (5001 * 10003 * 10003)) * (114 / (114 * 36)) = 3
+ */
+select
+  count(*)
+from users u
+  cross join communities c
+  join subscriptions s on (c.id = s.community_id and s.user_id = u.id and u.id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7')
+  left join resources r on (r.id = u.avatar and r."type" = 'image');

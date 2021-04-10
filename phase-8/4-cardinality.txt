@@ -1,0 +1,93 @@
+select 
+  count(*)
+from posts p
+  left join friends f on
+  (
+    f.friend_id = p.author_id and 
+    f.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    f.status = 'accepted'
+  )
+  left join subscriptions s on
+  (
+    s.community_id = p.author_id and
+    s.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    s.status in ('moderator', 'enabled')
+  )
+  left join users u on (u.id = p.author_id)
+  left join communities c on (c.id = p.author_id)
+  left join resources r on (r.id in (u.avatar, c.main_image) and r."type" = 'image');
+
+/* 
+ * First join selection
+ * ((((posts join friends) join subscriptions) join users) join communities) join resources
+ * Join Cardinalities: 7 + 7 + 7 + 7 + 7 = 35
+ * Join Estimation: (981890 / (10001 * 10001 * 1)) * (1007147 / (5001 * 10002 * 3)) * (10003 / 10003) * (5001 / 5001) * (114 / (114 * 36)) = 0
+ */
+select 
+  count(*)
+from posts p
+  left join friends f on
+  (
+    f.friend_id = p.author_id and 
+    f.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    f.status = 'accepted'
+  )
+  left join subscriptions s on
+  (
+    s.community_id = p.author_id and
+    s.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    s.status in ('moderator', 'enabled')
+  )
+  left join users u on (u.id = p.author_id)
+  left join communities c on (c.id = p.author_id)
+  left join resources r on (r.id in (u.avatar, c.main_image) and r."type" = 'image');
+
+/* 
+ * Second join selection
+ * ((((posts join subscriptions) join friends) join communities) join users) join resources
+ * Join Cardinalities: 7 + 7 + 7 + 7 + 7 = 35
+ * Join Estimation: (7050029 / (5001 * 10002 * 3)) * (140270 / (10001 * 10001 * 1)) * (5001 / 5001) * (10003 / 10003) * (114 / (114 * 36)) = 0
+ */
+select 
+  count(*)
+from posts p
+  left join subscriptions s on
+  (
+    s.community_id = p.author_id and
+    s.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    s.status in ('moderator', 'enabled')
+  )
+  left join friends f on
+  (
+    f.friend_id = p.author_id and 
+    f.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    f.status = 'accepted'
+  )
+  left join communities c on (c.id = p.author_id)
+  left join users u on (u.id = p.author_id)
+  left join resources r on (r.id in (u.avatar, c.main_image) and r."type" = 'image');
+
+/* 
+ * Third join selection
+ * ((((posts join communities) join users) join subscriptions) join resources) join friends
+ * Join Cardinalities: 7 + 7 + 7 + 7 + 7 = 35
+ * Join Estimation: (35007 / 5001) * (10003 / 10003) * (1007147 / (5001 * 10002 * 3)) * (114 / (114 * 36)) * (140270 / (10001 * 10001 * 1)) = 0
+ */
+select 
+  count(*)
+from posts p
+  left join communities c on (c.id = p.author_id)
+  left join users u on (u.id = p.author_id)
+  left join subscriptions s on
+  (
+    s.community_id = p.author_id and
+    s.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    s.status in ('moderator', 'enabled')
+  )
+  left join resources r on (r.id in (u.avatar, c.main_image) and r."type" = 'image')
+  left join friends f on
+  (
+    f.friend_id = p.author_id and 
+    f.user_id = 'fe10ce74-0379-47fe-a908-c4e7fdb43ae7' and
+    f.status = 'accepted'
+  );
