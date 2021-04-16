@@ -10,6 +10,7 @@ from communities c
  * ((communities join subscriptions) join users) join stats_records
  * Join Cardinalities: 1007147 + 1007147 + 4037706 = 6052000
  * Join Estimation: (5036742147 / 5001) * (10003 / 10003) * (40093 / 10003) = 4036743
+ * Time: 1781ms
  */
 select
   count(*)
@@ -23,6 +24,7 @@ from communities c
  * ((stats_records join users) join subscriptions) join communities
  * Join Cardinalities: 40093 + 4037706 + 4037706 = 8115505
  * Join Estimation: (401050279 / 10003) * (1007147 / 10003) * (5001 / 5001) = 4036743
+ * Time: 1765ms
  */
 select
   count(*)
@@ -36,6 +38,7 @@ from stats_records sr
  * ((users join subscriptions) join stats_records) join communities
  * Join Cardinalities: 1007147 + 4037706 + 4037706 = 9082559
  * Join Estimation: (10074491441 / 10003) * (40093 / 10003) * (5001 / 5001) = 4036743
+ * Time: 1671ms
  */
 select
   count(*)

@@ -9,6 +9,7 @@ from waste_types wt
  * (waste_types join stats_records) join users
  * Join Cardinalities: 40093 + 40093 = 80186
  * Join Estimation: (521209 / 13) * (10003 / 10003) = 40093
+ * Time: 359ms
  */
 select
   count(*)
@@ -21,6 +22,7 @@ from waste_types wt
  * (users join stats_records) join waste_types
  * Join Cardinalities: 40093 + 40093 = 80186
  * Join Estimation: (401050279 / 10003) * (13 / 13) = 40093
+ * Time: 365ms
  */
 select
   count(*)
@@ -33,6 +35,7 @@ from users u
  * (stats_records join waste_types) join users
  * Join Cardinalities: 40093 + 40093 = 80186
  * Join Estimation: (521209 / 13) * (10003 / 10003) = 40093
+ * Time: 344ms
  */
 select
   count(*)
