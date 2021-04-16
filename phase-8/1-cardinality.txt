@@ -21,6 +21,7 @@ where c.id = _id;
  * (((communities join resources) join subscriptions s) join subscriptions s2) join subscriptions s3
  * Join Cardinalities: 5001 + 3313 + 3313 + 3313 = 14940
  * Join Estimation: ((5001*114) / (114*36)) * (1007147 / (5001*5001)) * (1007147 / (5001*10002*3)) * (1007147 / (5001*10002)) = 1
+ * Time: 289 msec
  */
 select 
   count(*)
@@ -46,6 +47,7 @@ from communities c
  * (((subscriptions join communities) join s2) join s3) join resources
  * Join Cardinalities: 3313 + 3313 + 3313 + 3313 = 13252
  * Join Estimation: ((1007147*5001) / (5001*5001)) * (1007147 / (5001*10002*3)) * (1007147 / (5001*10002)) * (114 / (114*36)) = 1
+ * Time: 292 msec
  */
 select 
   count(*)
@@ -69,6 +71,7 @@ from subscriptions s
  * (((subscriptions join communities) join s2) join s3) join resources
  * Join Cardinalities: 3313 + 3313 + 3313 + 3313 = 13252
  * Join Estimation: ((5001*1007147) / (5001*5001)) * (1007147 / (5001*10002*3)) * (1007147 / (5001*10002)) * (114 / (114*36)) = 1
+ * Time: 295 msec
  */
 select 
   count(*)

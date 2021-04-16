@@ -12,6 +12,7 @@ where sr."date" between '2000-01-01' and '2023-01-01';
  * (((stats_types join stats_types_maps) join waste_types) join stats_records) join users
  * Join Cardinalities: 21 + 21 + 64839 + 64839 = 129720
  * Join Estimation: ((3*21) / 3) * (13 / 13) * (40093 / (13*9)) * (10003 / 10003) = 7196
+ * Time: 401 msec
  */
 select
   count(*)
@@ -26,6 +27,7 @@ from stats_types st
  * (((stats_types join stats_types_maps) join users) join waste_types) join stats_records
  * Join Cardinalities: 21 + 210063 + 210063 + 64839 = 484986
  * Join Estimation: ((3*21) / 3) * (10003) * (13/ 13) * (40093 / (13*9*10003)) = 7196
+ * Time: 361 msec
  */
 select
   count(*)
@@ -40,6 +42,7 @@ from stats_types st
  * (((stats_records join stats_types) join stats_types_maps) join users) join waste_types
  * Join Cardinalities: 120279 + 841953 + 8,422056*10^9 + 64839 = 8,422983*10^9 
  * Join Estimation: ((40093*3) / 9) * (21 / 3) * (10003) * (13 / (10003*13*13)) = 7196
+ * Time: 393 msec
  */
 select
   count(*)
