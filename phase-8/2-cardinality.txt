@@ -10,6 +10,7 @@ from stats_types st
  * ((stats_types join stats_types_maps) join stats_records) join resources
  * Join Cardinalities: 21 + 16 + 16 = 53
  * Join Estimation: (63 / 21) * (40093 / (13 * 10003)) * (114 / (114 * 36)) = 0
+ * Time: 354ms
  */
 select 
   count(*)
@@ -23,6 +24,7 @@ from stats_types st
  * ((stats_types_maps join stats_records) join stats_types) join resources
  * Join Cardinalities: 21 + 21 + 21 = 63
  * Join Estimation: (841995 / (13 * 10003)) * (3 / 3) * (114 / (114 * 36)) = 0.1
+ * Time: 343ms
  */
 select 
   count(*)
@@ -36,6 +38,7 @@ from stats_types_maps stm
  * ((stats_records join stats_types_maps) join stats_types) join resources
  * Join Cardinalities: 21 + 21 + 21 = 63
  * Join Estimation: (841995 / (13 * 10003)) * (3 / 3) * (114 / (114 * 36)) = 0.1
+ * Time: 333ms
  */
 select 
   count(*)

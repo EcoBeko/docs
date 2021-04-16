@@ -22,6 +22,7 @@ from posts p
  * ((((posts join friends) join subscriptions) join users) join communities) join resources
  * Join Cardinalities: 7 + 7 + 7 + 7 + 7 = 35
  * Join Estimation: (981890 / (10001 * 10001 * 1)) * (1007147 / (5001 * 10002 * 3)) * (10003 / 10003) * (5001 / 5001) * (114 / (114 * 36)) = 0
+ * Time: 302ms
  */
 select 
   count(*)
@@ -47,6 +48,7 @@ from posts p
  * ((((posts join subscriptions) join friends) join communities) join users) join resources
  * Join Cardinalities: 7 + 7 + 7 + 7 + 7 = 35
  * Join Estimation: (7050029 / (5001 * 10002 * 3)) * (140270 / (10001 * 10001 * 1)) * (5001 / 5001) * (10003 / 10003) * (114 / (114 * 36)) = 0
+ * Time: 313ms
  */
 select 
   count(*)
@@ -72,6 +74,7 @@ from posts p
  * ((((posts join communities) join users) join subscriptions) join resources) join friends
  * Join Cardinalities: 7 + 7 + 7 + 7 + 7 = 35
  * Join Estimation: (35007 / 5001) * (10003 / 10003) * (1007147 / (5001 * 10002 * 3)) * (114 / (114 * 36)) * (140270 / (10001 * 10001 * 1)) = 0
+ * Time: 315ms
  */
 select 
   count(*)
