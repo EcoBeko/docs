@@ -217,7 +217,6 @@ Datasets were generated after Phase 4 and are available here:
 - [recycling_points.csv](src/datasets/recycling_points.csv)
 - [waste_types.csv](src/datasets/waste_types.csv)
 - [communities.csv](src/datasets/communities.csv)
-- [recycling_points.csv](src/datasets/recycling_points.csv)
 - [recycling_point_accepts.csv](src/datasets/recycling_point_accepts.csv)
 
 > We will generate more datasets later
